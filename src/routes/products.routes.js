@@ -14,7 +14,7 @@ import {
 import { auth } from "../middlewares/auth.middleware.js"
 
 router.get('/products', getAllProducts)
-router.get('/products/search', searchProduct)
+// router.get('/products/search', searchProduct)
 router.get('/products/:id', getProductById)
 router.post('/products', auth, createProduct )
 router.put('/products/:id', auth, updateProduct)
