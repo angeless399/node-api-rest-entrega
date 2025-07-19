@@ -11,11 +11,13 @@ import {
         deleteProduct
     } from "../controllers/products.controller.js";
 
+import { auth } from "../middlewares/auth.middleware.js"
+
 router.get('/products', getAllProducts)
 router.get('/products/search', searchProduct)
 router.get('/products/:id', getProductById)
-router.post('/products', createProduct )
-router.put('/products/:id', updateProduct)
-router.delete('/products/:id', deleteProduct )
+router.post('/products', auth, createProduct )
+router.put('/products/:id', auth, updateProduct)
+router.delete('/products/:id', auth, deleteProduct )
 
 export default router

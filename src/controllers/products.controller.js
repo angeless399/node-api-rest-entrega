@@ -7,13 +7,7 @@ export const getAllProducts = async (req, res) => {
 
 //buscar producto FALTA
 export const searchProduct = (req, res) => {
-    // console.log(req.query)
-    // const { nombre } = req.query //destructuracion del query
-    // const filtered = model.searchProduct(nombre)
-    // if (filtered.length == 0) {
-    //     return res.status(404).json({ error: "no hay coincidencias" })
-    // }
-    // res.json(filtered)
+    
 }
 
 //obtener un producto

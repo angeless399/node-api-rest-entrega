@@ -26,7 +26,7 @@ export const getProductById = async (id) => {
 
 //buscar producto FALTA
 export const searchProduct = (nombre) => {
-    // return products.filter((item) => item.name.toLowerCase().includes(nombre.toLowerCase()));
+   
 }
 
 export const createProduct = async (data) => {
@@ -63,7 +63,6 @@ export const updateProduct = async (id, productData) => {
         }
 
         await setDoc(productRef, productData)//reemplazo completo PUT
-        // await setDoc(productRef, productData, {merge: true})//reemplaza solo que se envia PATCH no me funciono
         return {id, ...productData}
 
     } catch (error) {
